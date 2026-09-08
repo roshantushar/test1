@@ -1,0 +1,16 @@
+{
+  "MEASUREMENT_STATUS": "ESTIMATED - see module docstring. Not a live measurement.",
+  "referrals_per_month": 4000,
+  "fallback_hourly_rate_usd": 55.0,
+  "fallback_minutes_per_failure": 10.0,
+  "fallback_cost_per_failure_usd": 9.1667,
+  "variable_model_cost_per_referral_usd_ESTIMATE": 0.002181,
+  "estimate_source": "mean scripted-backend token estimate over 107 cases, priced at PRICE_IN=0.15/PRICE_OUT=0.60 per million tokens (config.py)",
+  "illustrative_success_rates": [
+    0.8,
+    0.9,
+    0.95,
+    0.99
+  ],
+  "baseline_success_rate_for_sensitivity": 0.9
+}

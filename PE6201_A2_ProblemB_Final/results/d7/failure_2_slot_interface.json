@@ -1,0 +1,52 @@
+{
+  "failure": "tool_interface - get_clinic_slots' band safeguard removed",
+  "layer": "tool interface (tools.py: get_clinic_slots)",
+  "method": "working interface minus X (band filtering), X restored",
+  "before": {
+    "decision": "book",
+    "booked": {
+      "clinic": "OPH-C2",
+      "date": "2026-10-14",
+      "time": "11:20"
+    },
+    "turns": 5,
+    "tool_calls": 6,
+    "tokens_total": 29460,
+    "cost_usd": 0.004716,
+    "stopped_by": null
+  },
+  "broken": {
+    "decision": "book",
+    "booked": {
+      "clinic": "OPH-C1",
+      "date": "2026-09-15",
+      "time": "09:40"
+    },
+    "turns": 6,
+    "tool_calls": 7,
+    "tokens_total": 38220,
+    "cost_usd": 0.006079,
+    "stopped_by": null
+  },
+  "restored": {
+    "decision": "book",
+    "booked": {
+      "clinic": "OPH-C2",
+      "date": "2026-10-14",
+      "time": "11:20"
+    },
+    "turns": 5,
+    "tool_calls": 6,
+    "tokens_total": 29460,
+    "cost_usd": 0.004716,
+    "stopped_by": null
+  },
+  "correct_booking": {
+    "clinic": "OPH-C2",
+    "date": "2026-10-14",
+    "time": "11:20"
+  },
+  "unsafe_booking": true,
+  "why_the_other_two_layers_are_the_wrong_place": "The step cap and budget ceiling bound RUN LENGTH; this run is short (5 turns) and cheap, so neither would ever fire - they cannot detect a wrong but confidently-reached answer. Action de-duplication does not apply either: nothing is repeated. Only the tool interface (making band mandatory AND filtered, so a wrong-band row can never be returned in the first place) closes this - the same reasoning that made band a required argument on get_clinic_slots and specialty+band required, cross-checked arguments on book_slot in the working version.",
+  "restored_matches_before": true
+}
