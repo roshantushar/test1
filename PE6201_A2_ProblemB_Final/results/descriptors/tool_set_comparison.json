@@ -1,0 +1,17 @@
+{
+  "trimmed_tool_count": 7,
+  "larger_tool_count": 9,
+  "trimmed_chars": 7104,
+  "trimmed_tokens_est": 1776,
+  "larger_chars": 7818,
+  "larger_tokens_est": 1954,
+  "overhead_tokens_est_per_turn": 178,
+  "total_turns_one_45case_pass": 138,
+  "wasted_tokens_est_one_45case_pass": 24564,
+  "unnecessary_tools_added_for_this_measurement": [
+    "get_specialty_info",
+    "list_all_specialties"
+  ],
+  "never_called_by_reference_solver": true,
+  "note": "Both candidate tools are never called by backends.ScriptedPolicyBackend on ANY of the 45 real cases, because their function is already covered by check_referral_criteria's pre-computed verdicts or by the referral's own `specialty` field. Their entire cost (178 tokens/turn est.) is pure overhead across every turn of every run - this is the concrete version of D6's 'tool block size' cost lever."
+}
