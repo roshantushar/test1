@@ -1,0 +1,24 @@
+{
+  "note": "Full 55-case/95-trial eval set, both grouping modes, scripted backend - token/cost figures are the scripted backend's ESTIMATE function, not a live measurement.",
+  "sequential": {
+    "label": "sequential_full_set",
+    "trials": 95,
+    "pass_rate": 1.0,
+    "total_turns": 402,
+    "median_turns": 3,
+    "total_tokens_estimate": 2337420,
+    "total_cost_usd_estimate": 0.375197
+  },
+  "parallel": {
+    "label": "parallel_full_set",
+    "trials": 95,
+    "pass_rate": 1.0,
+    "total_turns": 307,
+    "median_turns": 2,
+    "total_tokens_estimate": 1690020,
+    "total_cost_usd_estimate": 0.273378
+  },
+  "pass_rate_identical": true,
+  "turns_saved_pct": 23.6,
+  "tokens_saved_pct": 27.7
+}

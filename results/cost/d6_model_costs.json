@@ -1,0 +1,34 @@
+[
+  {
+    "success_rate": 0.8,
+    "variable_model_cost_per_referral_usd": 0.002878,
+    "expected_fallback_cost_per_referral_usd": 1.8333,
+    "cost_per_referral_usd": 1.8362,
+    "cost_per_successful_referral_usd": 2.2952,
+    "monthly_cost_usd": 7344.8
+  },
+  {
+    "success_rate": 0.9,
+    "variable_model_cost_per_referral_usd": 0.002878,
+    "expected_fallback_cost_per_referral_usd": 0.9167,
+    "cost_per_referral_usd": 0.9196,
+    "cost_per_successful_referral_usd": 1.0218,
+    "monthly_cost_usd": 3678.4
+  },
+  {
+    "success_rate": 0.95,
+    "variable_model_cost_per_referral_usd": 0.002878,
+    "expected_fallback_cost_per_referral_usd": 0.4583,
+    "cost_per_referral_usd": 0.4612,
+    "cost_per_successful_referral_usd": 0.4855,
+    "monthly_cost_usd": 1844.8
+  },
+  {
+    "success_rate": 0.99,
+    "variable_model_cost_per_referral_usd": 0.002878,
+    "expected_fallback_cost_per_referral_usd": 0.0917,
+    "cost_per_referral_usd": 0.0946,
+    "cost_per_successful_referral_usd": 0.0956,
+    "monthly_cost_usd": 378.4
+  }
+]

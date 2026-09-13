@@ -1,0 +1,112 @@
+[
+  {
+    "model": "openai/gpt-4o-mini",
+    "baseline_success_rate": 1.0,
+    "points": [
+      {
+        "success_rate": 0.9,
+        "cost_per_referral_usd": 0.9188,
+        "monthly_cost_usd": 3700.2
+      },
+      {
+        "success_rate": 1.0,
+        "cost_per_referral_usd": 0.0021,
+        "monthly_cost_usd": 33.4
+      },
+      {
+        "success_rate": 1.0,
+        "cost_per_referral_usd": 0.0021,
+        "monthly_cost_usd": 33.4
+      }
+    ],
+    "monthly_cost_swing_usd_over_20pp": 3666.8
+  },
+  {
+    "model": "google/gemini-2.5-flash-lite",
+    "baseline_success_rate": 0.9579,
+    "points": [
+      {
+        "success_rate": 0.8579,
+        "cost_per_referral_usd": 1.3052,
+        "monthly_cost_usd": 5245.8
+      },
+      {
+        "success_rate": 0.9579,
+        "cost_per_referral_usd": 0.3885,
+        "monthly_cost_usd": 1579.0
+      },
+      {
+        "success_rate": 1.0,
+        "cost_per_referral_usd": 0.0026,
+        "monthly_cost_usd": 35.4
+      }
+    ],
+    "monthly_cost_swing_usd_over_20pp": 5210.4
+  },
+  {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "baseline_success_rate": 0.8316,
+    "points": [
+      {
+        "success_rate": 0.7316,
+        "cost_per_referral_usd": 2.4626,
+        "monthly_cost_usd": 9875.4
+      },
+      {
+        "success_rate": 0.8316,
+        "cost_per_referral_usd": 1.546,
+        "monthly_cost_usd": 6209.0
+      },
+      {
+        "success_rate": 0.9316,
+        "cost_per_referral_usd": 0.6293,
+        "monthly_cost_usd": 2542.2
+      }
+    ],
+    "monthly_cost_swing_usd_over_20pp": 7333.2
+  },
+  {
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "baseline_success_rate": 0.5263,
+    "points": [
+      {
+        "success_rate": 0.4263,
+        "cost_per_referral_usd": 5.2614,
+        "monthly_cost_usd": 21070.6
+      },
+      {
+        "success_rate": 0.5263,
+        "cost_per_referral_usd": 4.3448,
+        "monthly_cost_usd": 17404.2
+      },
+      {
+        "success_rate": 0.6263,
+        "cost_per_referral_usd": 3.4281,
+        "monthly_cost_usd": 13737.4
+      }
+    ],
+    "monthly_cost_swing_usd_over_20pp": 7333.2
+  },
+  {
+    "model": "mistralai/mistral-nemo",
+    "baseline_success_rate": 0.2105,
+    "points": [
+      {
+        "success_rate": 0.1105,
+        "cost_per_referral_usd": 8.1553,
+        "monthly_cost_usd": 32646.2
+      },
+      {
+        "success_rate": 0.2105,
+        "cost_per_referral_usd": 7.2386,
+        "monthly_cost_usd": 28979.4
+      },
+      {
+        "success_rate": 0.3105,
+        "cost_per_referral_usd": 6.3219,
+        "monthly_cost_usd": 25312.6
+      }
+    ],
+    "monthly_cost_swing_usd_over_20pp": 7333.6
+  }
+]

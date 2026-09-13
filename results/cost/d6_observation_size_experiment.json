@@ -1,0 +1,26 @@
+{
+  "tool_under_test": "get_clinic_slots",
+  "model": "openai/gpt-4o-mini",
+  "case_subset": "the 14 book cases (1 trial each) - the only cases that see this tool's observation",
+  "verbose": {
+    "label": "verbose",
+    "trials": 35,
+    "pass_rate": 1.0,
+    "mean_tokens_in": 9136.257142857143,
+    "mean_tokens_out": 271.54285714285714,
+    "mean_turns": 4.0,
+    "total_cost_usd": 0.053669,
+    "failures": []
+  },
+  "compact": {
+    "label": "compact",
+    "trials": 35,
+    "pass_rate": 1.0,
+    "mean_tokens_in": 9105.114285714286,
+    "mean_tokens_out": 267.7142857142857,
+    "mean_turns": 4.0,
+    "total_cost_usd": 0.053422000000000004,
+    "failures": []
+  },
+  "token_saving_pct": 0.34
+}

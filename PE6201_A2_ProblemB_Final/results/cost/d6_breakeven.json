@@ -1,7 +1,0 @@
-{
-  "definition": "success rate s* at which variable_cost + (1-s*)*fallback == fallback (i.e. automating is no better than manual fallback for every referral). Solve: s* = variable_cost_per_referral / fallback_cost_per_failure.",
-  "variable_cost_per_referral_usd_ESTIMATE": 0.002181,
-  "fallback_cost_per_failure_usd": 9.1667,
-  "breakeven_success_rate": 0.000238,
-  "interpretation": "Below a 0.02% success rate, this agent costs MORE per referral than simply having a human handle every referral by hand - automation only pays for itself above that line. Given the ESTIMATED (not measured) variable cost, this line itself is provisional."
-}

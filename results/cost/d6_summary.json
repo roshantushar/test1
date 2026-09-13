@@ -1,0 +1,248 @@
+{
+  "MEASUREMENT_STATUS": "ESTIMATED - see module docstring. Not a live measurement.",
+  "referrals_per_month": 4000,
+  "fallback_cost_per_failure_usd": 9.1667,
+  "variable_model_cost_per_referral_usd_ESTIMATE": 0.002878,
+  "cost_by_success_rate": [
+    {
+      "success_rate": 0.8,
+      "variable_model_cost_per_referral_usd": 0.002878,
+      "expected_fallback_cost_per_referral_usd": 1.8333,
+      "cost_per_referral_usd": 1.8362,
+      "cost_per_successful_referral_usd": 2.2952,
+      "monthly_cost_usd": 7344.8
+    },
+    {
+      "success_rate": 0.9,
+      "variable_model_cost_per_referral_usd": 0.002878,
+      "expected_fallback_cost_per_referral_usd": 0.9167,
+      "cost_per_referral_usd": 0.9196,
+      "cost_per_successful_referral_usd": 1.0218,
+      "monthly_cost_usd": 3678.4
+    },
+    {
+      "success_rate": 0.95,
+      "variable_model_cost_per_referral_usd": 0.002878,
+      "expected_fallback_cost_per_referral_usd": 0.4583,
+      "cost_per_referral_usd": 0.4612,
+      "cost_per_successful_referral_usd": 0.4855,
+      "monthly_cost_usd": 1844.8
+    },
+    {
+      "success_rate": 0.99,
+      "variable_model_cost_per_referral_usd": 0.002878,
+      "expected_fallback_cost_per_referral_usd": 0.0917,
+      "cost_per_referral_usd": 0.0946,
+      "cost_per_successful_referral_usd": 0.0956,
+      "monthly_cost_usd": 378.4
+    }
+  ],
+  "breakeven_success_rate": 0.000314,
+  "sensitivity_pp": 10,
+  "cost_levers": {
+    "tool_block_size": "The system prompt's tool descriptors are resent on EVERY turn (see prompt.py / prompt.audit()). A longer descriptor block multiplies its cost by the number of turns in every run, not just once - measured in characters/~tokens via `run_eval.py --prompt`.",
+    "turn_count": "Each turn re-sends the growing transcript, so cost grows roughly with T (turns) and, for the base prompt prefix, with T again - see D2(c)'s parallel-vs-sequential result (results/parallelism/comparison.json): grouping independent calls into fewer turns is a direct token saving, not just a latency one.",
+    "observation_size": "Tool observations are appended to the transcript and re-sent every subsequent turn. get_clinic_slots can return many rows; trimming or summarising large observations before they re-enter the transcript is a lever this project's tools do not yet exploit.",
+    "success_rate": "Dominates the fallback term (see the sensitivity note above) once fallback cost per failure (US$9.17) is much larger than the per-referral model cost - true at this dataset's scale, and the reason chasing success rate matters more than shaving tokens once a model is already cheap."
+  },
+  "next_step": "Re-run this script unchanged once results/live/model_comparison.json exists (D5b) - swap the ESTIMATE line for the measured mean cost and the ILLUSTRATIVE success rates for the measured pass rate.",
+  "measured_one_model": {
+    "model": "openai/gpt-4o-mini",
+    "MEASUREMENT_STATUS": "REAL measured numbers (one model, one prompt version) - not the full D5b family comparison.",
+    "success_rate_measured": 1.0,
+    "success_rate_caveat": "This is the D4 CODE-CHECK pass rate over 95 evaluation trials on the CURRENT 55-case eval set, for the v2 prompt - not yet a large-sample production success rate, and not the number for every prompt: the SAME model with the deliberately worse v1 prompt scores far lower on the identical trials (results/descriptors/comparison.json, see docs/D5_MODEL_BATTERY.md for the exact current figures) - this set is dominated by cases needing an EXACT trigger/missing label, which v1's schema cannot supply even when it reaches the right underlying decision. See docs/D4_EVALUATION.md and STATUS.md for the full account.",
+    "variable_model_cost_per_referral_usd_MEASURED": 0.002098,
+    "expected_fallback_cost_per_referral_usd": 0.0,
+    "cost_per_referral_usd": 0.0021,
+    "monthly_cost_usd_at_4000_referrals": 8.4
+  },
+  "measured_all_models": [
+    {
+      "model": "openai/gpt-4o-mini",
+      "success_rate_measured": 1.0,
+      "negative_success_rate_measured": 1.0,
+      "mean_latency_seconds": 9.116,
+      "variable_model_cost_per_referral_usd_MEASURED": 0.002098,
+      "expected_fallback_cost_per_referral_usd": 0.0,
+      "cost_per_referral_usd": 0.0021,
+      "cost_per_successful_referral_usd": 0.0021,
+      "layer_3_fixed_monthly_usd": 25.0,
+      "monthly_cost_usd_at_4000_referrals": 33.4
+    },
+    {
+      "model": "google/gemini-2.5-flash-lite",
+      "success_rate_measured": 0.9579,
+      "negative_success_rate_measured": 1.0,
+      "mean_latency_seconds": 4.663,
+      "variable_model_cost_per_referral_usd_MEASURED": 0.002584,
+      "expected_fallback_cost_per_referral_usd": 0.3859,
+      "cost_per_referral_usd": 0.3885,
+      "cost_per_successful_referral_usd": 0.4056,
+      "layer_3_fixed_monthly_usd": 25.0,
+      "monthly_cost_usd_at_4000_referrals": 1579.0
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "success_rate_measured": 0.8316,
+      "negative_success_rate_measured": 0.9167,
+      "mean_latency_seconds": 25.59,
+      "variable_model_cost_per_referral_usd_MEASURED": 0.002267,
+      "expected_fallback_cost_per_referral_usd": 1.5437,
+      "cost_per_referral_usd": 1.546,
+      "cost_per_successful_referral_usd": 1.8591,
+      "layer_3_fixed_monthly_usd": 25.0,
+      "monthly_cost_usd_at_4000_referrals": 6209.0
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "success_rate_measured": 0.5263,
+      "negative_success_rate_measured": 0.3333,
+      "mean_latency_seconds": 8.574,
+      "variable_model_cost_per_referral_usd_MEASURED": 0.002511,
+      "expected_fallback_cost_per_referral_usd": 4.3423,
+      "cost_per_referral_usd": 4.3448,
+      "cost_per_successful_referral_usd": 8.2554,
+      "layer_3_fixed_monthly_usd": 25.0,
+      "monthly_cost_usd_at_4000_referrals": 17404.2
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "success_rate_measured": 0.2105,
+      "negative_success_rate_measured": 0.25,
+      "mean_latency_seconds": 15.528,
+      "variable_model_cost_per_referral_usd_MEASURED": 0.00148,
+      "expected_fallback_cost_per_referral_usd": 7.2371,
+      "cost_per_referral_usd": 7.2386,
+      "cost_per_successful_referral_usd": 34.3876,
+      "layer_3_fixed_monthly_usd": 25.0,
+      "monthly_cost_usd_at_4000_referrals": 28979.4
+    }
+  ],
+  "measured_all_models_note": "5-model D5(b) battery, all on the identical 55-case v2-prompt eval set, real OpenRouter usage. Cheapest at this scale (4000 referrals/month) is openai/gpt-4o-mini at $33.40/month, driven almost entirely by its 100.0% success rate keeping the fallback term small - not by having the lowest raw per-token price. A model with a lower sticker price but a materially lower success rate (e.g. mistralai/mistral-nemo or meta-llama/llama-3.1-8b-instruct, both <40% pass) costs far more overall once the $9.17/failure fallback is priced in.",
+  "switch_breakeven": {
+    "definition": "The success rate the CHEAP model needs before switching to it stops paying for itself. failures_affordable = (E-C)/F; breakeven_success_rate = 1 - failures_affordable.",
+    "expensive_model": "openai/gpt-4o-mini",
+    "E_cost_per_successful_task_usd": 0.0021,
+    "cheap_model": "mistralai/mistral-nemo",
+    "C_cost_per_run_tokens_only_usd": 0.00148,
+    "F_failure_cost_usd": 9.1667,
+    "E_minus_C_usd": 0.00062,
+    "failures_affordable_fraction": 6.8e-05,
+    "breakeven_success_rate": 0.999932,
+    "cheap_model_measured_success_rate": 0.2105,
+    "cheap_model_clears_breakeven": false,
+    "interpretation": "openai/gpt-4o-mini costs $0.002100 per SUCCESSFUL referral outright (it is already cheap AND accurate: 100.0% measured success, so layer 2 is effectively zero). mistralai/mistral-nemo's own tokens cost only $0.001480 per run - cheaper still - but for switching to it to pay off, it would need to succeed 99.99% of the time. It is measured at 21.1%, nowhere close. This is Class 4's own worked-example insight in its most extreme form: when the reference option is ALREADY this cheap and this accurate, no amount of additional per-token savings from a worse model can close the gap - a Problem B failure costs $9.17, and that number, not the sticker price, decides which model ships."
+  },
+  "real_sensitivity_per_model": [
+    {
+      "model": "openai/gpt-4o-mini",
+      "baseline_success_rate": 1.0,
+      "points": [
+        {
+          "success_rate": 0.9,
+          "cost_per_referral_usd": 0.9188,
+          "monthly_cost_usd": 3700.2
+        },
+        {
+          "success_rate": 1.0,
+          "cost_per_referral_usd": 0.0021,
+          "monthly_cost_usd": 33.4
+        },
+        {
+          "success_rate": 1.0,
+          "cost_per_referral_usd": 0.0021,
+          "monthly_cost_usd": 33.4
+        }
+      ],
+      "monthly_cost_swing_usd_over_20pp": 3666.8
+    },
+    {
+      "model": "google/gemini-2.5-flash-lite",
+      "baseline_success_rate": 0.9579,
+      "points": [
+        {
+          "success_rate": 0.8579,
+          "cost_per_referral_usd": 1.3052,
+          "monthly_cost_usd": 5245.8
+        },
+        {
+          "success_rate": 0.9579,
+          "cost_per_referral_usd": 0.3885,
+          "monthly_cost_usd": 1579.0
+        },
+        {
+          "success_rate": 1.0,
+          "cost_per_referral_usd": 0.0026,
+          "monthly_cost_usd": 35.4
+        }
+      ],
+      "monthly_cost_swing_usd_over_20pp": 5210.4
+    },
+    {
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "baseline_success_rate": 0.8316,
+      "points": [
+        {
+          "success_rate": 0.7316,
+          "cost_per_referral_usd": 2.4626,
+          "monthly_cost_usd": 9875.4
+        },
+        {
+          "success_rate": 0.8316,
+          "cost_per_referral_usd": 1.546,
+          "monthly_cost_usd": 6209.0
+        },
+        {
+          "success_rate": 0.9316,
+          "cost_per_referral_usd": 0.6293,
+          "monthly_cost_usd": 2542.2
+        }
+      ],
+      "monthly_cost_swing_usd_over_20pp": 7333.2
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "baseline_success_rate": 0.5263,
+      "points": [
+        {
+          "success_rate": 0.4263,
+          "cost_per_referral_usd": 5.2614,
+          "monthly_cost_usd": 21070.6
+        },
+        {
+          "success_rate": 0.5263,
+          "cost_per_referral_usd": 4.3448,
+          "monthly_cost_usd": 17404.2
+        },
+        {
+          "success_rate": 0.6263,
+          "cost_per_referral_usd": 3.4281,
+          "monthly_cost_usd": 13737.4
+        }
+      ],
+      "monthly_cost_swing_usd_over_20pp": 7333.2
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "baseline_success_rate": 0.2105,
+      "points": [
+        {
+          "success_rate": 0.1105,
+          "cost_per_referral_usd": 8.1553,
+          "monthly_cost_usd": 32646.2
+        },
+        {
+          "success_rate": 0.2105,
+          "cost_per_referral_usd": 7.2386,
+          "monthly_cost_usd": 28979.4
+        },
+        {
+          "success_rate": 0.3105,
+          "cost_per_referral_usd": 6.3219,
+          "monthly_cost_usd": 25312.6
+        }
+      ],
+      "monthly_cost_swing_usd_over_20pp": 7333.6
+    }
+  ]
+}

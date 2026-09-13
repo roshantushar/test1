@@ -1,0 +1,162 @@
+[
+  {
+    "model": "openai/gpt-4o-mini",
+    "trials": 95,
+    "passed": 95,
+    "pass_rate": 1.0,
+    "negative_trials": 60,
+    "negative_passed": 60,
+    "negative_pass_rate": 1.0,
+    "mean_turns": 3.053,
+    "median_turns": 4,
+    "mean_latency_seconds": 9.116,
+    "total_tokens_in": 689419,
+    "total_tokens_out": 20000,
+    "total_cost_usd": 0.1154,
+    "top_failing_families": []
+  },
+  {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "trials": 95,
+    "passed": 79,
+    "pass_rate": 0.8316,
+    "negative_trials": 60,
+    "negative_passed": 55,
+    "negative_pass_rate": 0.9167,
+    "mean_turns": 3.189,
+    "median_turns": 3,
+    "mean_latency_seconds": 25.59,
+    "total_tokens_in": 728574,
+    "total_tokens_out": 25622,
+    "total_cost_usd": 0.1247,
+    "top_failing_families": [
+      [
+        "no_slot_in_window",
+        2
+      ],
+      [
+        "routine_booking_multi_query",
+        1
+      ],
+      [
+        "duplicate_future_appointment",
+        1
+      ],
+      [
+        "block1_ordinary_ort",
+        1
+      ],
+      [
+        "block2_all_mandatory_tests_attached_card",
+        1
+      ]
+    ]
+  },
+  {
+    "model": "google/gemini-2.5-flash-lite",
+    "trials": 95,
+    "passed": 91,
+    "pass_rate": 0.9579,
+    "negative_trials": 60,
+    "negative_passed": 60,
+    "negative_pass_rate": 1.0,
+    "mean_turns": 3.379,
+    "median_turns": 2,
+    "mean_latency_seconds": 4.663,
+    "total_tokens_in": 805654,
+    "total_tokens_out": 35446,
+    "total_cost_usd": 0.1421,
+    "top_failing_families": [
+      [
+        "block3_endo_soon_band_book",
+        1
+      ],
+      [
+        "block5_nonduplicate_different_specialty_card",
+        1
+      ],
+      [
+        "block5_nonduplicate_past_appointment_der",
+        1
+      ],
+      [
+        "block5_nonduplicate_different_specialty_ent",
+        1
+      ]
+    ]
+  },
+  {
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "trials": 95,
+    "passed": 50,
+    "pass_rate": 0.5263,
+    "negative_trials": 60,
+    "negative_passed": 20,
+    "negative_pass_rate": 0.3333,
+    "mean_turns": 3.337,
+    "median_turns": 3,
+    "mean_latency_seconds": 8.574,
+    "total_tokens_in": 739403,
+    "total_tokens_out": 45349,
+    "total_cost_usd": 0.1381,
+    "top_failing_families": [
+      [
+        "red_flag",
+        3
+      ],
+      [
+        "specialty_mismatch",
+        3
+      ],
+      [
+        "prompt_injection_overt",
+        3
+      ],
+      [
+        "prompt_injection_imitating_tool_output",
+        3
+      ],
+      [
+        "red_flag_other_specialty",
+        3
+      ]
+    ]
+  },
+  {
+    "model": "mistralai/mistral-nemo",
+    "trials": 95,
+    "passed": 20,
+    "pass_rate": 0.2105,
+    "negative_trials": 60,
+    "negative_passed": 15,
+    "negative_pass_rate": 0.25,
+    "mean_turns": 1.642,
+    "median_turns": 2,
+    "mean_latency_seconds": 15.528,
+    "total_tokens_in": 457712,
+    "total_tokens_out": 21288,
+    "total_cost_usd": 0.0814,
+    "top_failing_families": [
+      [
+        "red_flag",
+        3
+      ],
+      [
+        "one_of_two_mandatory_tests_missing",
+        3
+      ],
+      [
+        "specialty_mismatch",
+        3
+      ],
+      [
+        "duplicate_future_appointment",
+        3
+      ],
+      [
+        "no_slot_in_window",
+        3
+      ]
+    ]
+  }
+]

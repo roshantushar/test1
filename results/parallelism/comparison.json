@@ -1,0 +1,53 @@
+{
+  "case_id": "REF-5602",
+  "note": "Token/cost figures are the scripted backend's ESTIMATE function, not a live measurement - see STATUS.md.",
+  "sequential": {
+    "label": "sequential",
+    "case_id": "REF-5602",
+    "decision": "book",
+    "turns": 6,
+    "tool_calls": 6,
+    "tokens_in_estimate": 37450,
+    "tokens_out_estimate": 770,
+    "total_tokens_estimate": 38220,
+    "cost_usd_estimate": 0.006079,
+    "seconds": 0.002,
+    "evidence": [
+      "get_referral",
+      "check_referral_criteria",
+      "lookup_patient",
+      "compute_window",
+      "get_clinic_slots",
+      "book_slot"
+    ]
+  },
+  "parallel": {
+    "label": "parallel",
+    "case_id": "REF-5602",
+    "decision": "book",
+    "turns": 5,
+    "tool_calls": 6,
+    "tokens_in_estimate": 28800,
+    "tokens_out_estimate": 660,
+    "total_tokens_estimate": 29460,
+    "cost_usd_estimate": 0.004716,
+    "seconds": 0.0,
+    "evidence": [
+      "get_referral",
+      "check_referral_criteria",
+      "lookup_patient",
+      "compute_window",
+      "get_clinic_slots",
+      "book_slot"
+    ]
+  },
+  "delta": {
+    "turns_saved": 1,
+    "turns_saved_pct": 16.7,
+    "tool_calls_identical": true,
+    "total_tokens_saved_estimate": 8760,
+    "cost_saved_usd_estimate": 0.001363,
+    "wasted_calls": 0,
+    "correctness_identical": true
+  }
+}

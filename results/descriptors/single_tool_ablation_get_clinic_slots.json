@@ -1,0 +1,37 @@
+{
+  "tool_under_test": "get_clinic_slots",
+  "model": "openai/gpt-4o-mini",
+  "case_subset": "book cases (1 trial) + no_slot_in_window escalate cases (3 trials) - only cases that call get_clinic_slots",
+  "v1_weak_descriptor_and_verbose_return": {
+    "label": "v1_weak_get_clinic_slots",
+    "trials": 41,
+    "pass_rate": 1.0,
+    "negative_trials": 6,
+    "negative_pass_rate": 1.0,
+    "mean_tokens_in": 8797.975609756097,
+    "mean_tokens_out": 270.5853658536585,
+    "mean_get_clinic_slots_tokens_returned_per_call": 39.05487804878049,
+    "mean_turns": 4.121951219512195,
+    "total_cost_usd": 0.060764000000000006,
+    "wasted_get_clinic_slots_calls": 0,
+    "guardrail_band_correct": "41/41",
+    "guardrail_correct_ordering": "0/41",
+    "failures": []
+  },
+  "v2_full_descriptor_and_compact_return": {
+    "label": "v2_full_get_clinic_slots",
+    "trials": 41,
+    "pass_rate": 1.0,
+    "negative_trials": 6,
+    "negative_pass_rate": 1.0,
+    "mean_tokens_in": 9106.975609756097,
+    "mean_tokens_out": 265.1707317073171,
+    "mean_get_clinic_slots_tokens_returned_per_call": 19.170731707317074,
+    "mean_turns": 4.0,
+    "total_cost_usd": 0.062531,
+    "wasted_get_clinic_slots_calls": 0,
+    "guardrail_band_correct": "41/41",
+    "guardrail_correct_ordering": "0/41",
+    "failures": []
+  }
+}

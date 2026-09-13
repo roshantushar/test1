@@ -1,0 +1,14 @@
+{
+  "definition": "The success rate the CHEAP model needs before switching to it stops paying for itself. failures_affordable = (E-C)/F; breakeven_success_rate = 1 - failures_affordable.",
+  "expensive_model": "openai/gpt-4o-mini",
+  "E_cost_per_successful_task_usd": 0.0021,
+  "cheap_model": "mistralai/mistral-nemo",
+  "C_cost_per_run_tokens_only_usd": 0.00148,
+  "F_failure_cost_usd": 9.1667,
+  "E_minus_C_usd": 0.00062,
+  "failures_affordable_fraction": 6.8e-05,
+  "breakeven_success_rate": 0.999932,
+  "cheap_model_measured_success_rate": 0.2105,
+  "cheap_model_clears_breakeven": false,
+  "interpretation": "openai/gpt-4o-mini costs $0.002100 per SUCCESSFUL referral outright (it is already cheap AND accurate: 100.0% measured success, so layer 2 is effectively zero). mistralai/mistral-nemo's own tokens cost only $0.001480 per run - cheaper still - but for switching to it to pay off, it would need to succeed 99.99% of the time. It is measured at 21.1%, nowhere close. This is Class 4's own worked-example insight in its most extreme form: when the reference option is ALREADY this cheap and this accurate, no amount of additional per-token savings from a worse model can close the gap - a Problem B failure costs $9.17, and that number, not the sticker price, decides which model ships."
+}

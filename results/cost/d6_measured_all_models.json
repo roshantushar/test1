@@ -1,0 +1,62 @@
+[
+  {
+    "model": "openai/gpt-4o-mini",
+    "success_rate_measured": 1.0,
+    "negative_success_rate_measured": 1.0,
+    "mean_latency_seconds": 9.116,
+    "variable_model_cost_per_referral_usd_MEASURED": 0.002098,
+    "expected_fallback_cost_per_referral_usd": 0.0,
+    "cost_per_referral_usd": 0.0021,
+    "cost_per_successful_referral_usd": 0.0021,
+    "layer_3_fixed_monthly_usd": 25.0,
+    "monthly_cost_usd_at_4000_referrals": 33.4
+  },
+  {
+    "model": "google/gemini-2.5-flash-lite",
+    "success_rate_measured": 0.9579,
+    "negative_success_rate_measured": 1.0,
+    "mean_latency_seconds": 4.663,
+    "variable_model_cost_per_referral_usd_MEASURED": 0.002584,
+    "expected_fallback_cost_per_referral_usd": 0.3859,
+    "cost_per_referral_usd": 0.3885,
+    "cost_per_successful_referral_usd": 0.4056,
+    "layer_3_fixed_monthly_usd": 25.0,
+    "monthly_cost_usd_at_4000_referrals": 1579.0
+  },
+  {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "success_rate_measured": 0.8316,
+    "negative_success_rate_measured": 0.9167,
+    "mean_latency_seconds": 25.59,
+    "variable_model_cost_per_referral_usd_MEASURED": 0.002267,
+    "expected_fallback_cost_per_referral_usd": 1.5437,
+    "cost_per_referral_usd": 1.546,
+    "cost_per_successful_referral_usd": 1.8591,
+    "layer_3_fixed_monthly_usd": 25.0,
+    "monthly_cost_usd_at_4000_referrals": 6209.0
+  },
+  {
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "success_rate_measured": 0.5263,
+    "negative_success_rate_measured": 0.3333,
+    "mean_latency_seconds": 8.574,
+    "variable_model_cost_per_referral_usd_MEASURED": 0.002511,
+    "expected_fallback_cost_per_referral_usd": 4.3423,
+    "cost_per_referral_usd": 4.3448,
+    "cost_per_successful_referral_usd": 8.2554,
+    "layer_3_fixed_monthly_usd": 25.0,
+    "monthly_cost_usd_at_4000_referrals": 17404.2
+  },
+  {
+    "model": "mistralai/mistral-nemo",
+    "success_rate_measured": 0.2105,
+    "negative_success_rate_measured": 0.25,
+    "mean_latency_seconds": 15.528,
+    "variable_model_cost_per_referral_usd_MEASURED": 0.00148,
+    "expected_fallback_cost_per_referral_usd": 7.2371,
+    "cost_per_referral_usd": 7.2386,
+    "cost_per_successful_referral_usd": 34.3876,
+    "layer_3_fixed_monthly_usd": 25.0,
+    "monthly_cost_usd_at_4000_referrals": 28979.4
+  }
+]

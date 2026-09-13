@@ -1,0 +1,10 @@
+{
+  "model": "openai/gpt-4o-mini",
+  "MEASUREMENT_STATUS": "REAL measured numbers (one model, one prompt version) - not the full D5b family comparison.",
+  "success_rate_measured": 1.0,
+  "success_rate_caveat": "This is the D4 CODE-CHECK pass rate over 95 evaluation trials on the CURRENT 55-case eval set, for the v2 prompt - not yet a large-sample production success rate, and not the number for every prompt: the SAME model with the deliberately worse v1 prompt scores far lower on the identical trials (results/descriptors/comparison.json, see docs/D5_MODEL_BATTERY.md for the exact current figures) - this set is dominated by cases needing an EXACT trigger/missing label, which v1's schema cannot supply even when it reaches the right underlying decision. See docs/D4_EVALUATION.md and STATUS.md for the full account.",
+  "variable_model_cost_per_referral_usd_MEASURED": 0.002098,
+  "expected_fallback_cost_per_referral_usd": 0.0,
+  "cost_per_referral_usd": 0.0021,
+  "monthly_cost_usd_at_4000_referrals": 8.4
+}

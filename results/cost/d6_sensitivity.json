@@ -1,0 +1,26 @@
+{
+  "baseline_success_rate": 0.9,
+  "range_tested_pp": "+/-10",
+  "points": [
+    {
+      "success_rate": 0.8,
+      "delta_from_baseline_pp": -10.0,
+      "cost_per_referral_usd": 1.8362,
+      "monthly_cost_usd": 7344.8
+    },
+    {
+      "success_rate": 0.9,
+      "delta_from_baseline_pp": 0.0,
+      "cost_per_referral_usd": 0.9196,
+      "monthly_cost_usd": 3678.4
+    },
+    {
+      "success_rate": 1.0,
+      "delta_from_baseline_pp": 10.0,
+      "cost_per_referral_usd": 0.0029,
+      "monthly_cost_usd": 11.6
+    }
+  ],
+  "monthly_cost_swing_usd": 7333.2,
+  "note": "A 10-point swing in success rate around the illustrative 90% baseline moves the monthly bill by US$7333.20, almost entirely through the FALLBACK term, not the model term - the fallback cost (US$9.17/failure) dominates the variable model cost (US$0.0029/referral, estimated) at this scale."
+}
