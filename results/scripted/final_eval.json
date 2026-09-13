@@ -1,5 +1,5 @@
 {
-  "config": "BACKEND=scripted  FREE, deterministic  |  PROBLEM=B  |  model=(no model)  |  cap=8 turns  |  autonomy=confirm  |  data=/Users/roshantushar/Desktop/A2-Final/PE6201_A2_ProblemB_Final/data/generated/data_B",
+  "config": "BACKEND=scripted  FREE, deterministic  |  PROBLEM=B  |  model=(no model)  |  cap=8 turns  |  autonomy=confirm  |  data=/Users/roshantushar/Desktop/A2-Final/test1/data/generated/data_B",
   "summary": {
     "trials": 95,
     "passed": 95,
@@ -381,11 +381,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "OPH",
-              "referral_id": "REF-5602",
-              "time": "11:20",
-              "band": "routine",
               "clinic": "OPH-C2",
+              "band": "routine",
+              "specialty": "OPH",
+              "time": "11:20",
+              "referral_id": "REF-5602",
               "date": "2026-10-14"
             },
             "observation": {
@@ -773,11 +773,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "DER",
-              "referral_id": "REF-5620",
-              "time": "10:40",
-              "band": "routine",
               "clinic": "DER-C1",
+              "band": "routine",
+              "specialty": "DER",
+              "time": "10:40",
+              "referral_id": "REF-5620",
               "date": "2026-09-30"
             },
             "observation": {
@@ -917,11 +917,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "CARD",
-              "referral_id": "REF-5631",
-              "time": "08:30",
-              "band": "urgent",
               "clinic": "CARD-C1",
+              "band": "urgent",
+              "specialty": "CARD",
+              "time": "08:30",
+              "referral_id": "REF-5631",
               "date": "2026-09-16"
             },
             "observation": {
@@ -1066,11 +1066,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ORT",
-              "referral_id": "REF-5645",
-              "time": "09:20",
-              "band": "routine",
               "clinic": "ORT-C1",
+              "band": "routine",
+              "specialty": "ORT",
+              "time": "09:20",
+              "referral_id": "REF-5645",
               "date": "2026-10-07"
             },
             "observation": {
@@ -3227,11 +3227,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ENT",
-              "referral_id": "REF-5738",
-              "time": "13:20",
-              "band": "routine",
               "clinic": "ENT-C1",
+              "band": "routine",
+              "specialty": "ENT",
+              "time": "13:20",
+              "referral_id": "REF-5738",
               "date": "2026-10-21"
             },
             "observation": {
@@ -3359,11 +3359,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "DER",
-              "referral_id": "REF-6001",
-              "time": "11:00",
-              "band": "soon",
               "clinic": "DER-C2",
+              "band": "soon",
+              "specialty": "DER",
+              "time": "11:00",
+              "referral_id": "REF-6001",
               "date": "2026-09-24"
             },
             "observation": {
@@ -3502,11 +3502,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "OPH",
-              "referral_id": "REF-6002",
-              "time": "09:40",
-              "band": "urgent",
               "clinic": "OPH-C1",
+              "band": "urgent",
+              "specialty": "OPH",
+              "time": "09:40",
+              "referral_id": "REF-6002",
               "date": "2026-09-15"
             },
             "observation": {
@@ -3638,11 +3638,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "CARD",
-              "referral_id": "REF-6003",
-              "time": "10:00",
-              "band": "routine",
               "clinic": "CARD-C2",
+              "band": "routine",
+              "specialty": "CARD",
+              "time": "10:00",
+              "referral_id": "REF-6003",
               "date": "2026-10-21"
             },
             "observation": {
@@ -3773,11 +3773,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ORT",
-              "referral_id": "REF-6004",
-              "time": "15:00",
-              "band": "soon",
               "clinic": "ORT-C3",
+              "band": "soon",
+              "specialty": "ORT",
+              "time": "15:00",
+              "referral_id": "REF-6004",
               "date": "2026-09-28"
             },
             "observation": {
@@ -3909,11 +3909,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ENT",
-              "referral_id": "REF-6005",
-              "time": "13:20",
-              "band": "routine",
               "clinic": "ENT-C1",
+              "band": "routine",
+              "specialty": "ENT",
+              "time": "13:20",
+              "referral_id": "REF-6005",
               "date": "2026-10-21"
             },
             "observation": {
@@ -4045,11 +4045,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "CARD",
-              "referral_id": "REF-6011",
-              "time": "10:00",
-              "band": "routine",
               "clinic": "CARD-C2",
+              "band": "routine",
+              "specialty": "CARD",
+              "time": "10:00",
+              "referral_id": "REF-6011",
               "date": "2026-10-21"
             },
             "observation": {
@@ -4181,11 +4181,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ENT",
-              "referral_id": "REF-6012",
-              "time": "13:20",
-              "band": "routine",
               "clinic": "ENT-C1",
+              "band": "routine",
+              "specialty": "ENT",
+              "time": "13:20",
+              "referral_id": "REF-6012",
               "date": "2026-10-21"
             },
             "observation": {
@@ -4316,11 +4316,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "NEURO",
-              "referral_id": "REF-6013",
-              "time": "10:00",
-              "band": "routine",
               "clinic": "NEURO-R1",
+              "band": "routine",
+              "specialty": "NEURO",
+              "time": "10:00",
+              "referral_id": "REF-6013",
               "date": "2026-11-04"
             },
             "observation": {
@@ -4451,11 +4451,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "RESP",
-              "referral_id": "REF-6014",
-              "time": "09:30",
-              "band": "routine",
               "clinic": "RESP-R1",
+              "band": "routine",
+              "specialty": "RESP",
+              "time": "09:30",
+              "referral_id": "REF-6014",
               "date": "2026-10-14"
             },
             "observation": {
@@ -4602,11 +4602,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "OPH",
-              "referral_id": "REF-6015",
-              "time": "11:20",
-              "band": "routine",
               "clinic": "OPH-C2",
+              "band": "routine",
+              "specialty": "OPH",
+              "time": "11:20",
+              "referral_id": "REF-6015",
               "date": "2026-10-14"
             },
             "observation": {
@@ -4734,11 +4734,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "DER",
-              "referral_id": "REF-6021",
-              "time": "08:45",
-              "band": "urgent",
               "clinic": "DER-URG1",
+              "band": "urgent",
+              "specialty": "DER",
+              "time": "08:45",
+              "referral_id": "REF-6021",
               "date": "2026-09-23"
             },
             "observation": {
@@ -4869,11 +4869,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "NEURO",
-              "referral_id": "REF-6022",
-              "time": "10:00",
-              "band": "routine",
               "clinic": "NEURO-R1",
+              "band": "routine",
+              "specialty": "NEURO",
+              "time": "10:00",
+              "referral_id": "REF-6022",
               "date": "2026-11-04"
             },
             "observation": {
@@ -5004,11 +5004,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "NEURO",
-              "referral_id": "REF-6023",
-              "time": "11:00",
-              "band": "soon",
               "clinic": "NEURO-S1",
+              "band": "soon",
+              "specialty": "NEURO",
+              "time": "11:00",
+              "referral_id": "REF-6023",
               "date": "2026-10-07"
             },
             "observation": {
@@ -5139,11 +5139,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "RESP",
-              "referral_id": "REF-6024",
-              "time": "10:15",
-              "band": "urgent",
               "clinic": "RESP-U1",
+              "band": "urgent",
+              "specialty": "RESP",
+              "time": "10:15",
+              "referral_id": "REF-6024",
               "date": "2026-09-23"
             },
             "observation": {
@@ -5274,11 +5274,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ENDO",
-              "referral_id": "REF-6025",
-              "time": "10:30",
-              "band": "soon",
               "clinic": "ENDO-S1",
+              "band": "soon",
+              "specialty": "ENDO",
+              "time": "10:30",
+              "referral_id": "REF-6025",
               "date": "2026-09-26"
             },
             "observation": {
@@ -5425,11 +5425,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "OPH",
-              "referral_id": "REF-6031",
-              "time": "11:20",
-              "band": "routine",
               "clinic": "OPH-C2",
+              "band": "routine",
+              "specialty": "OPH",
+              "time": "11:20",
+              "referral_id": "REF-6031",
               "date": "2026-10-14"
             },
             "observation": {
@@ -5561,11 +5561,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "CARD",
-              "referral_id": "REF-6032",
-              "time": "10:00",
-              "band": "routine",
               "clinic": "CARD-C2",
+              "band": "routine",
+              "specialty": "CARD",
+              "time": "10:00",
+              "referral_id": "REF-6032",
               "date": "2026-10-21"
             },
             "observation": {
@@ -5704,11 +5704,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ORT",
-              "referral_id": "REF-6033",
-              "time": "09:20",
-              "band": "routine",
               "clinic": "ORT-C1",
+              "band": "routine",
+              "specialty": "ORT",
+              "time": "09:20",
+              "referral_id": "REF-6033",
               "date": "2026-10-07"
             },
             "observation": {
@@ -5844,11 +5844,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "DER",
-              "referral_id": "REF-6034",
-              "time": "10:40",
-              "band": "routine",
               "clinic": "DER-C1",
+              "band": "routine",
+              "specialty": "DER",
+              "time": "10:40",
+              "referral_id": "REF-6034",
               "date": "2026-09-30"
             },
             "observation": {
@@ -5980,11 +5980,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ENT",
-              "referral_id": "REF-6035",
-              "time": "13:20",
-              "band": "routine",
               "clinic": "ENT-C1",
+              "band": "routine",
+              "specialty": "ENT",
+              "time": "13:20",
+              "referral_id": "REF-6035",
               "date": "2026-10-21"
             },
             "observation": {
@@ -6122,11 +6122,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "CARD",
-              "referral_id": "REF-6041",
-              "time": "10:00",
-              "band": "routine",
               "clinic": "CARD-C2",
+              "band": "routine",
+              "specialty": "CARD",
+              "time": "10:00",
+              "referral_id": "REF-6041",
               "date": "2026-10-21"
             },
             "observation": {
@@ -6271,11 +6271,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ORT",
-              "referral_id": "REF-6042",
-              "time": "09:20",
-              "band": "routine",
               "clinic": "ORT-C1",
+              "band": "routine",
+              "specialty": "ORT",
+              "time": "09:20",
+              "referral_id": "REF-6042",
               "date": "2026-10-07"
             },
             "observation": {
@@ -6417,11 +6417,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "DER",
-              "referral_id": "REF-6043",
-              "time": "10:40",
-              "band": "routine",
               "clinic": "DER-C1",
+              "band": "routine",
+              "specialty": "DER",
+              "time": "10:40",
+              "referral_id": "REF-6043",
               "date": "2026-09-30"
             },
             "observation": {
@@ -6559,11 +6559,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ENT",
-              "referral_id": "REF-6044",
-              "time": "13:20",
-              "band": "routine",
               "clinic": "ENT-C1",
+              "band": "routine",
+              "specialty": "ENT",
+              "time": "13:20",
+              "referral_id": "REF-6044",
               "date": "2026-10-21"
             },
             "observation": {
@@ -6700,11 +6700,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "NEURO",
-              "referral_id": "REF-6045",
-              "time": "10:00",
-              "band": "routine",
               "clinic": "NEURO-R1",
+              "band": "routine",
+              "specialty": "NEURO",
+              "time": "10:00",
+              "referral_id": "REF-6045",
               "date": "2026-11-04"
             },
             "observation": {
@@ -6843,11 +6843,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ORT",
-              "referral_id": "REF-6051",
-              "time": "09:20",
-              "band": "routine",
               "clinic": "ORT-C1",
+              "band": "routine",
+              "specialty": "ORT",
+              "time": "09:20",
+              "referral_id": "REF-6051",
               "date": "2026-10-07"
             },
             "observation": {
@@ -6978,11 +6978,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "RESP",
-              "referral_id": "REF-6052",
-              "time": "10:15",
-              "band": "urgent",
               "clinic": "RESP-U1",
+              "band": "urgent",
+              "specialty": "RESP",
+              "time": "10:15",
+              "referral_id": "REF-6052",
               "date": "2026-09-23"
             },
             "observation": {
@@ -7114,11 +7114,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ENT",
-              "referral_id": "REF-6053",
-              "time": "13:20",
-              "band": "routine",
               "clinic": "ENT-C1",
+              "band": "routine",
+              "specialty": "ENT",
+              "time": "13:20",
+              "referral_id": "REF-6053",
               "date": "2026-10-21"
             },
             "observation": {
@@ -7254,11 +7254,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "DER",
-              "referral_id": "REF-6054",
-              "time": "10:40",
-              "band": "routine",
               "clinic": "DER-C1",
+              "band": "routine",
+              "specialty": "DER",
+              "time": "10:40",
+              "referral_id": "REF-6054",
               "date": "2026-09-30"
             },
             "observation": {
@@ -7389,11 +7389,11 @@
           {
             "tool": "book_slot",
             "args": {
-              "specialty": "ENDO",
-              "referral_id": "REF-6055",
-              "time": "10:30",
-              "band": "soon",
               "clinic": "ENDO-S1",
+              "band": "soon",
+              "specialty": "ENDO",
+              "time": "10:30",
+              "referral_id": "REF-6055",
               "date": "2026-09-26"
             },
             "observation": {
@@ -10118,11 +10118,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "OPH",
-            "referral_id": "REF-5602",
-            "time": "11:20",
-            "band": "routine",
             "clinic": "OPH-C2",
+            "band": "routine",
+            "specialty": "OPH",
+            "time": "11:20",
+            "referral_id": "REF-5602",
             "date": "2026-10-14"
           },
           "observation": {
@@ -10308,11 +10308,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "DER",
-            "referral_id": "REF-5620",
-            "time": "10:40",
-            "band": "routine",
             "clinic": "DER-C1",
+            "band": "routine",
+            "specialty": "DER",
+            "time": "10:40",
+            "referral_id": "REF-5620",
             "date": "2026-09-30"
           },
           "observation": {
@@ -10429,11 +10429,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "CARD",
-            "referral_id": "REF-5631",
-            "time": "08:30",
-            "band": "urgent",
             "clinic": "CARD-C1",
+            "band": "urgent",
+            "specialty": "CARD",
+            "time": "08:30",
+            "referral_id": "REF-5631",
             "date": "2026-09-16"
           },
           "observation": {
@@ -10556,11 +10556,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ORT",
-            "referral_id": "REF-5645",
-            "time": "09:20",
-            "band": "routine",
             "clinic": "ORT-C1",
+            "band": "routine",
+            "specialty": "ORT",
+            "time": "09:20",
+            "referral_id": "REF-5645",
             "date": "2026-10-07"
           },
           "observation": {
@@ -11234,11 +11234,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ENT",
-            "referral_id": "REF-5738",
-            "time": "13:20",
-            "band": "routine",
             "clinic": "ENT-C1",
+            "band": "routine",
+            "specialty": "ENT",
+            "time": "13:20",
+            "referral_id": "REF-5738",
             "date": "2026-10-21"
           },
           "observation": {
@@ -11343,11 +11343,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "DER",
-            "referral_id": "REF-6001",
-            "time": "11:00",
-            "band": "soon",
             "clinic": "DER-C2",
+            "band": "soon",
+            "specialty": "DER",
+            "time": "11:00",
+            "referral_id": "REF-6001",
             "date": "2026-09-24"
           },
           "observation": {
@@ -11463,11 +11463,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "OPH",
-            "referral_id": "REF-6002",
-            "time": "09:40",
-            "band": "urgent",
             "clinic": "OPH-C1",
+            "band": "urgent",
+            "specialty": "OPH",
+            "time": "09:40",
+            "referral_id": "REF-6002",
             "date": "2026-09-15"
           },
           "observation": {
@@ -11576,11 +11576,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "CARD",
-            "referral_id": "REF-6003",
-            "time": "10:00",
-            "band": "routine",
             "clinic": "CARD-C2",
+            "band": "routine",
+            "specialty": "CARD",
+            "time": "10:00",
+            "referral_id": "REF-6003",
             "date": "2026-10-21"
           },
           "observation": {
@@ -11688,11 +11688,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ORT",
-            "referral_id": "REF-6004",
-            "time": "15:00",
-            "band": "soon",
             "clinic": "ORT-C3",
+            "band": "soon",
+            "specialty": "ORT",
+            "time": "15:00",
+            "referral_id": "REF-6004",
             "date": "2026-09-28"
           },
           "observation": {
@@ -11801,11 +11801,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ENT",
-            "referral_id": "REF-6005",
-            "time": "13:20",
-            "band": "routine",
             "clinic": "ENT-C1",
+            "band": "routine",
+            "specialty": "ENT",
+            "time": "13:20",
+            "referral_id": "REF-6005",
             "date": "2026-10-21"
           },
           "observation": {
@@ -11914,11 +11914,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "CARD",
-            "referral_id": "REF-6011",
-            "time": "10:00",
-            "band": "routine",
             "clinic": "CARD-C2",
+            "band": "routine",
+            "specialty": "CARD",
+            "time": "10:00",
+            "referral_id": "REF-6011",
             "date": "2026-10-21"
           },
           "observation": {
@@ -12027,11 +12027,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ENT",
-            "referral_id": "REF-6012",
-            "time": "13:20",
-            "band": "routine",
             "clinic": "ENT-C1",
+            "band": "routine",
+            "specialty": "ENT",
+            "time": "13:20",
+            "referral_id": "REF-6012",
             "date": "2026-10-21"
           },
           "observation": {
@@ -12139,11 +12139,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "NEURO",
-            "referral_id": "REF-6013",
-            "time": "10:00",
-            "band": "routine",
             "clinic": "NEURO-R1",
+            "band": "routine",
+            "specialty": "NEURO",
+            "time": "10:00",
+            "referral_id": "REF-6013",
             "date": "2026-11-04"
           },
           "observation": {
@@ -12251,11 +12251,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "RESP",
-            "referral_id": "REF-6014",
-            "time": "09:30",
-            "band": "routine",
             "clinic": "RESP-R1",
+            "band": "routine",
+            "specialty": "RESP",
+            "time": "09:30",
+            "referral_id": "REF-6014",
             "date": "2026-10-14"
           },
           "observation": {
@@ -12379,11 +12379,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "OPH",
-            "referral_id": "REF-6015",
-            "time": "11:20",
-            "band": "routine",
             "clinic": "OPH-C2",
+            "band": "routine",
+            "specialty": "OPH",
+            "time": "11:20",
+            "referral_id": "REF-6015",
             "date": "2026-10-14"
           },
           "observation": {
@@ -12488,11 +12488,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "DER",
-            "referral_id": "REF-6021",
-            "time": "08:45",
-            "band": "urgent",
             "clinic": "DER-URG1",
+            "band": "urgent",
+            "specialty": "DER",
+            "time": "08:45",
+            "referral_id": "REF-6021",
             "date": "2026-09-23"
           },
           "observation": {
@@ -12600,11 +12600,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "NEURO",
-            "referral_id": "REF-6022",
-            "time": "10:00",
-            "band": "routine",
             "clinic": "NEURO-R1",
+            "band": "routine",
+            "specialty": "NEURO",
+            "time": "10:00",
+            "referral_id": "REF-6022",
             "date": "2026-11-04"
           },
           "observation": {
@@ -12713,11 +12713,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "NEURO",
-            "referral_id": "REF-6023",
-            "time": "11:00",
-            "band": "soon",
             "clinic": "NEURO-S1",
+            "band": "soon",
+            "specialty": "NEURO",
+            "time": "11:00",
+            "referral_id": "REF-6023",
             "date": "2026-10-07"
           },
           "observation": {
@@ -12825,11 +12825,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "RESP",
-            "referral_id": "REF-6024",
-            "time": "10:15",
-            "band": "urgent",
             "clinic": "RESP-U1",
+            "band": "urgent",
+            "specialty": "RESP",
+            "time": "10:15",
+            "referral_id": "REF-6024",
             "date": "2026-09-23"
           },
           "observation": {
@@ -12937,11 +12937,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ENDO",
-            "referral_id": "REF-6025",
-            "time": "10:30",
-            "band": "soon",
             "clinic": "ENDO-S1",
+            "band": "soon",
+            "specialty": "ENDO",
+            "time": "10:30",
+            "referral_id": "REF-6025",
             "date": "2026-09-26"
           },
           "observation": {
@@ -13066,11 +13066,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "OPH",
-            "referral_id": "REF-6031",
-            "time": "11:20",
-            "band": "routine",
             "clinic": "OPH-C2",
+            "band": "routine",
+            "specialty": "OPH",
+            "time": "11:20",
+            "referral_id": "REF-6031",
             "date": "2026-10-14"
           },
           "observation": {
@@ -13179,11 +13179,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "CARD",
-            "referral_id": "REF-6032",
-            "time": "10:00",
-            "band": "routine",
             "clinic": "CARD-C2",
+            "band": "routine",
+            "specialty": "CARD",
+            "time": "10:00",
+            "referral_id": "REF-6032",
             "date": "2026-10-21"
           },
           "observation": {
@@ -13299,11 +13299,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ORT",
-            "referral_id": "REF-6033",
-            "time": "09:20",
-            "band": "routine",
             "clinic": "ORT-C1",
+            "band": "routine",
+            "specialty": "ORT",
+            "time": "09:20",
+            "referral_id": "REF-6033",
             "date": "2026-10-07"
           },
           "observation": {
@@ -13416,11 +13416,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "DER",
-            "referral_id": "REF-6034",
-            "time": "10:40",
-            "band": "routine",
             "clinic": "DER-C1",
+            "band": "routine",
+            "specialty": "DER",
+            "time": "10:40",
+            "referral_id": "REF-6034",
             "date": "2026-09-30"
           },
           "observation": {
@@ -13529,11 +13529,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ENT",
-            "referral_id": "REF-6035",
-            "time": "13:20",
-            "band": "routine",
             "clinic": "ENT-C1",
+            "band": "routine",
+            "specialty": "ENT",
+            "time": "13:20",
+            "referral_id": "REF-6035",
             "date": "2026-10-21"
           },
           "observation": {
@@ -13648,11 +13648,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "CARD",
-            "referral_id": "REF-6041",
-            "time": "10:00",
-            "band": "routine",
             "clinic": "CARD-C2",
+            "band": "routine",
+            "specialty": "CARD",
+            "time": "10:00",
+            "referral_id": "REF-6041",
             "date": "2026-10-21"
           },
           "observation": {
@@ -13774,11 +13774,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ORT",
-            "referral_id": "REF-6042",
-            "time": "09:20",
-            "band": "routine",
             "clinic": "ORT-C1",
+            "band": "routine",
+            "specialty": "ORT",
+            "time": "09:20",
+            "referral_id": "REF-6042",
             "date": "2026-10-07"
           },
           "observation": {
@@ -13897,11 +13897,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "DER",
-            "referral_id": "REF-6043",
-            "time": "10:40",
-            "band": "routine",
             "clinic": "DER-C1",
+            "band": "routine",
+            "specialty": "DER",
+            "time": "10:40",
+            "referral_id": "REF-6043",
             "date": "2026-09-30"
           },
           "observation": {
@@ -14016,11 +14016,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ENT",
-            "referral_id": "REF-6044",
-            "time": "13:20",
-            "band": "routine",
             "clinic": "ENT-C1",
+            "band": "routine",
+            "specialty": "ENT",
+            "time": "13:20",
+            "referral_id": "REF-6044",
             "date": "2026-10-21"
           },
           "observation": {
@@ -14134,11 +14134,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "NEURO",
-            "referral_id": "REF-6045",
-            "time": "10:00",
-            "band": "routine",
             "clinic": "NEURO-R1",
+            "band": "routine",
+            "specialty": "NEURO",
+            "time": "10:00",
+            "referral_id": "REF-6045",
             "date": "2026-11-04"
           },
           "observation": {
@@ -14254,11 +14254,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ORT",
-            "referral_id": "REF-6051",
-            "time": "09:20",
-            "band": "routine",
             "clinic": "ORT-C1",
+            "band": "routine",
+            "specialty": "ORT",
+            "time": "09:20",
+            "referral_id": "REF-6051",
             "date": "2026-10-07"
           },
           "observation": {
@@ -14366,11 +14366,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "RESP",
-            "referral_id": "REF-6052",
-            "time": "10:15",
-            "band": "urgent",
             "clinic": "RESP-U1",
+            "band": "urgent",
+            "specialty": "RESP",
+            "time": "10:15",
+            "referral_id": "REF-6052",
             "date": "2026-09-23"
           },
           "observation": {
@@ -14480,11 +14480,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ENT",
-            "referral_id": "REF-6053",
-            "time": "13:20",
-            "band": "routine",
             "clinic": "ENT-C1",
+            "band": "routine",
+            "specialty": "ENT",
+            "time": "13:20",
+            "referral_id": "REF-6053",
             "date": "2026-10-21"
           },
           "observation": {
@@ -14597,11 +14597,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "DER",
-            "referral_id": "REF-6054",
-            "time": "10:40",
-            "band": "routine",
             "clinic": "DER-C1",
+            "band": "routine",
+            "specialty": "DER",
+            "time": "10:40",
+            "referral_id": "REF-6054",
             "date": "2026-09-30"
           },
           "observation": {
@@ -14709,11 +14709,11 @@
         {
           "tool": "book_slot",
           "args": {
-            "specialty": "ENDO",
-            "referral_id": "REF-6055",
-            "time": "10:30",
-            "band": "soon",
             "clinic": "ENDO-S1",
+            "band": "soon",
+            "specialty": "ENDO",
+            "time": "10:30",
+            "referral_id": "REF-6055",
             "date": "2026-09-26"
           },
           "observation": {
