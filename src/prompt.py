@@ -47,7 +47,7 @@ why the v1-vs-v2 comparison can only be measured on the LIVE battery
 (see results/descriptors/; see docs/D2_TOOL_DESIGN.md and STATUS.md).
 ====================================================================
 """
-import test1.src.tools as tools
+import tools
 
 # =====================================================================
 # ROUTING RULES - two versions

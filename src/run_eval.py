@@ -16,8 +16,8 @@ import json
 import os
 import sys
 
-import test1.src.config as config
-from test1.src.harness import load_cases, load_key, report, run_set
+import config
+from harness import load_cases, load_key, report, run_set
 
 
 def main(argv):
@@ -29,7 +29,7 @@ def main(argv):
     version = "v1" if "--v1" in flags else "v2"
 
     if "--prompt" in flags:
-        import test1.src.prompt as prompt
+        import prompt
         print()
         prompt.audit(version)
         return 0

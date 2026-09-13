@@ -45,7 +45,7 @@ import json
 import os
 import re
 
-import test1.src.config as config
+import config
 
 _CACHE = {}
 

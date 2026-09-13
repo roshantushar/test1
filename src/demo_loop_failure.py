@@ -16,9 +16,9 @@ write-up (both failures) with saved evidence under results/d7/.
 """
 import copy
 
-import test1.src.config as config
-from test1.src.agent import run_case
-from test1.src.guardrails import Guardrails
+import config
+from agent import run_case
+from guardrails import Guardrails
 
 CASE = "REF-5602"
 
@@ -26,7 +26,7 @@ CASE = "REF-5602"
 def _looping_moves(case_id):
     """The working, real move list for CASE, with one call repeated -
     modelling a model that has forgotten it already asked."""
-    import test1.src.backends as backends
+    import backends
     real = backends.ScriptedPolicyBackend(case_id)._derive_moves()
     repeat = copy.deepcopy(real[1])   # the check_referral_criteria/lookup_patient turn
     repeat["thought"] = "Let me check the criteria again to be sure."

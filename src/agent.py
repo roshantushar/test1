@@ -18,12 +18,12 @@ trigger / missing item / booking), and stopped_by.
 """
 import time
 
-import test1.src.config as config
-import test1.src.prompt as prompt
-import test1.src.tools as tools
-from test1.src.backends import _find_duplicate, make_backend
-from test1.src.decision_log import record_decision
-from test1.src.guardrails import Guardrails, GuardrailStop
+import config
+import prompt
+import tools
+from backends import _find_duplicate, make_backend
+from decision_log import record_decision
+from guardrails import Guardrails, GuardrailStop
 
 
 def run_case(case_id, approve=None, verbose=False, parallel=True,

@@ -48,8 +48,8 @@ import time
 import urllib.error
 import urllib.request
 
-import test1.src.config as config
-import test1.src.tools as tools
+import config
+import tools
 
 
 class ScriptedPolicyBackend:

@@ -27,8 +27,8 @@ import json
 import urllib.error
 import urllib.request
 
-import test1.src.config as config
-from test1.src.backends import _extract_braced, _strip_code_fence  # noqa: E402 - reuse tolerant parsing
+import config
+from backends import _extract_braced, _strip_code_fence  # noqa: E402 - reuse tolerant parsing
 
 # Deliberately NOT config.MODEL - see module docstring. Any model on
 # OpenRouter works; a different family from the agent model is the point,

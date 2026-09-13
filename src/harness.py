@@ -33,8 +33,8 @@ import json
 import os
 import statistics
 
-import test1.src.config as config
-from test1.src.agent import run_case
+import config
+from agent import run_case
 
 
 # =====================================================================

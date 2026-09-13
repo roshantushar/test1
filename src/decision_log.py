@@ -65,5 +65,5 @@ def record_decision(record):
 
 
 def _autonomy_label(record):
-    import test1.src.config as config
+    import config
     return config.AUTONOMY
