@@ -1,0 +1,146 @@
+[
+  {
+    "model": "openai/gpt-4o-mini",
+    "trials": 107,
+    "passed": 107,
+    "pass_rate": 1.0,
+    "negative_trials": 93,
+    "negative_passed": 93,
+    "negative_pass_rate": 1.0,
+    "mean_turns": 2.766,
+    "median_turns": 2,
+    "mean_latency_seconds": 6.349,
+    "total_tokens_in": 715734,
+    "total_tokens_out": 20489,
+    "total_cost_usd": 0.1197,
+    "top_failing_families": []
+  },
+  {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "trials": 107,
+    "passed": 106,
+    "pass_rate": 0.9907,
+    "negative_trials": 93,
+    "negative_passed": 92,
+    "negative_pass_rate": 0.9892,
+    "mean_turns": 3.065,
+    "median_turns": 2,
+    "mean_latency_seconds": 14.523,
+    "total_tokens_in": 762757,
+    "total_tokens_out": 27199,
+    "total_cost_usd": 0.1307,
+    "top_failing_families": [
+      [
+        "one_of_two_mandatory_tests_missing",
+        1
+      ]
+    ]
+  },
+  {
+    "model": "google/gemini-2.5-flash-lite",
+    "trials": 107,
+    "passed": 97,
+    "pass_rate": 0.9065,
+    "negative_trials": 93,
+    "negative_passed": 83,
+    "negative_pass_rate": 0.8925,
+    "mean_turns": 2.86,
+    "median_turns": 2,
+    "mean_latency_seconds": 3.852,
+    "total_tokens_in": 766060,
+    "total_tokens_out": 33187,
+    "total_cost_usd": 0.1348,
+    "top_failing_families": [
+      [
+        "block3_no_slot_in_window_endo_routine",
+        3
+      ],
+      [
+        "block5_duplicate_card",
+        3
+      ],
+      [
+        "block6_specialty_mismatch_ort_vs_ent",
+        3
+      ],
+      [
+        "prompt_injection_imitating_tool_output",
+        1
+      ]
+    ]
+  },
+  {
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "trials": 107,
+    "passed": 42,
+    "pass_rate": 0.3925,
+    "negative_trials": 93,
+    "negative_passed": 31,
+    "negative_pass_rate": 0.3333,
+    "mean_turns": 3.168,
+    "median_turns": 3,
+    "mean_latency_seconds": 7.616,
+    "total_tokens_in": 748205,
+    "total_tokens_out": 49300,
+    "total_cost_usd": 0.1418,
+    "top_failing_families": [
+      [
+        "red_flag",
+        3
+      ],
+      [
+        "mandatory_test_missing",
+        3
+      ],
+      [
+        "specialty_mismatch",
+        3
+      ],
+      [
+        "prompt_injection_overt",
+        3
+      ],
+      [
+        "prompt_injection_imitating_tool_output",
+        3
+      ]
+    ]
+  },
+  {
+    "model": "mistralai/mistral-nemo",
+    "trials": 107,
+    "passed": 36,
+    "pass_rate": 0.3364,
+    "negative_trials": 93,
+    "negative_passed": 33,
+    "negative_pass_rate": 0.3548,
+    "mean_turns": 1.944,
+    "median_turns": 2,
+    "mean_latency_seconds": 6.848,
+    "total_tokens_in": 577544,
+    "total_tokens_out": 15263,
+    "total_cost_usd": 0.0958,
+    "top_failing_families": [
+      [
+        "red_flag",
+        3
+      ],
+      [
+        "one_of_two_mandatory_tests_missing",
+        3
+      ],
+      [
+        "no_tests_attached",
+        3
+      ],
+      [
+        "specialty_mismatch",
+        3
+      ],
+      [
+        "duplicate_future_appointment",
+        3
+      ]
+    ]
+  }
+]
